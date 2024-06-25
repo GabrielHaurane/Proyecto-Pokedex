@@ -14,8 +14,48 @@
 
 <body>
     <header>
-
-    </header>
+        <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a href="./index.html"><img src="./img/icons8-pokedex-40.png" alt="icono de Pokedex"></a>
+          <a class="navbar-brand text-light" href="./index.html">Pokedex</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Tipos de Pokemón</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Regiones
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Kanto</a></li>
+                  <li><a class="dropdown-item" href="#">Johto</a></li>
+                  <li><a class="dropdown-item" href="#">Hoenn</a></li>
+                  <li><a class="dropdown-item" href="#">Sinnoh</a></li>
+                  <li><a class="dropdown-item" href="#">Teselia/Unova</a></li>
+                  <li><a class="dropdown-item" href="#">Kalos</a></li>
+                  <li><a class="dropdown-item" href="#">Alola</a></li>
+                  <li><a class="dropdown-item" href="#">Galar</a></li>
+                  <li><a class="dropdown-item" href="#">Paldea</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar un Pokemón" aria-label="Search">
+              <button class="btn border border-white text-white" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav></header>
     <main>
         <section class="d-flex flex-column flex-wrap align-content-center align-items-center">
 
@@ -238,9 +278,95 @@
 
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer class="py-5 bg-dark text-light text-center text-md-start">
+        <section class="container">
+          <article class="d-flex justify-content-center">
+            <h2>Pokedex</h2>
+            <a class="ms-2 fs-3 link-secondary" href="#"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a class="ms-2 fs-3 link-secondary" href="#"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a class="ms-2 fs-3 link-secondary" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </article>
+          <article class="row my-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+              <h5 class="text-secondary">Navegación</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="./pages/nosotros.html"
+                    class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >¿Quiénes somos?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >Juegos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >Tabla de tipos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                    >Ayuda</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+              <h5 class="text-secondary mt-3 mt-md-0">Descarga nuestra app</h5>
+              <img src="img/badge-apple-store.svg" alt="" class="w-75 py-1" />
+              <img src="img/google-play-badge-bb.svg" alt="" class="w-75 py-1" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                <h5 class="text-secondary">Contacto</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >Email: contacto@pokedex.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >Teléfono: +54 456 7050</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >Dirección: Pueblo Paleta, kanto</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-25 link-underline-opacity-100-hover"
+                      >Terminos y condiciones</a
+                    >
+                  </li>
+                </ul>
+              </div>
+          </article>
+        </section>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
