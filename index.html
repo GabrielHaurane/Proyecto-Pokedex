@@ -1,87 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
 </head>
 
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+                <a href="./index.html"><img src="./img/icons8-pokedex-40.png" alt="icono de Pokedex"></a>
+                <a class="navbar-brand text-light " href="./index.html">Pokedex</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item text-white ">
+                            <a class="nav-link text-white" aria-current="page" href="./pages/Error404.html">Tipos de
+                                Pokemón</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Regiones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Kanto</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Johto</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Hoenn</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Sinnoh</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Teselia/Unova</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Kalos</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Alola</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Galar</a></li>
+                                <li><a class="dropdown-item" href="./pages/Error404.html">Paldea</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar un Pokemón"
+                            aria-label="Search">
+                        <button class="btn border border-white text-white" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section class="d-flex flex-column">
+        <section class="d-flex flex-column flex-wrap align-content-center align-items-center">
+
             <div>
                 <h1>Pokédex</h1>
             </div>
-            <section>
-                <form>
-                    <section>
-                        <label for="busqueda">Nombre o numero</label>
-                        <input type="search" name="busqueda" id="busqueda">
-                        <button><i class="bi bi-search"></i></button>
+            <section
+                class="d-flex justify-content-center align-items-center flex-column flex-md-row py-3 bg-secondary-subtle w-100">
+                <form class="col-12 col-sm-6">
+                    <section class="d-flex flex-column">
+                        <label for="busqueda" class="fs-5">Nombre o numero</label>
+                        <sectio>
+                            <input type="search" name="busqueda" id="busqueda"
+                                class="border fs-4 bg-light text-black rounded-0">
+                            <button><i class="bi bi-search fs-4 "></i></button>
+                        </sectio>
                     </section>
                 </form>
+
+                <section class=" col-lg-3 col-md-5 col-12 col-sm-6 my-3">
+                    <p class="fs-4 border rounded-3 bg-success">Busca un Pokémon por su nombre o su numero de la Pokédex
+                        Nacional.</p>
+                </section>
             </section>
-            <section>
-                <h2>Busca un Pokémon por su nombre o su numero de la Pokédex Nacional.</h2>
-            </section>
-            <section>
+            <section class="py-3">
                 <label for="orden">Ordernar por:</label>
-                <select name="orden" id="orden">
+                <select class="border bg-light text-black" name="orden" id="orden">
                     <option value="NumInf">Numero inferior a mayor</option>
                     <option value="NumMay">Numero mayor a inferior</option>
                     <option value="A-Z">De A - Z</option>
                     <option value="Z-A">De Z - A</option>
                 </select>
             </section>
-            <article class="row justify-content-evenly">
-                <div class="card col-lg-2">
-                    <img src="./img/bulbasaur.png" class="card-img-top" alt="bulbasaur-001">
-                    <div class="card-body">
-                      <p class="card-text">N° 001</p>
-                      <h3>Bulbasaur</h3>
-                      <div><p>Planta</p></div>
-                      <div><p>Veneno</p></div>
+            <article class="row justify-content-evenly w-75 bg-light">
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card plant1">
+                        <img src="./img/bulbasaur.png" class="card-img-top w-50" alt="bulbasaur-001" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 001</p>
+                            <h3 class="text-black">Bulbasaur</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                  </div>
-                <div class="card col-lg-2">
-                    <img src="./img/Ivysaur.png" class="card-img-top" alt="Ivysaur-002">
-                    <div class="card-body">
-                      <p class="card-text">N° 002</p>
-                      <h3>Ivysaur</h3>
-                      <div><p>Planta</p></div>
-                      <div><p>Veneno</p></div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card plant2">
+                        <img src="./img/Ivysaur.png" class="card-img-top w-50" alt="Ivysaur-002" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 002</p>
+                            <h3 class="text-black">Ivysaur</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                  </div>
-                <div class="card col-lg-2">
-                    <img src="./img/Venusaur.png" class="card-img-top" alt="Venusaur-003">
-                    <div class="card-body">
-                      <p class="card-text">N° 003</p>
-                      <h3>Venusaur</h3>
-                      <div><p>Planta</p></div>
-                      <div><p>Veneno</p></div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card plant3">
+                        <img src="./img/Venusaur.png" class="card-img-top w-50" alt="Venusaur-003" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 003</p>
+                            <h3 class="text-black">Venusaur</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPlant">Planta</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemPoisson">Veneno</p>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                  </div>
-                <div class="card col-lg-2">
-                    <img src="./img/charmander.png" class="card-img-top" alt="charmander-004">
-                    <div class="card-body">
-                      <p class="card-text">N° 004</p>
-                      <h3>charmander</h3>
-                      <div><p>fuego</p></div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card fire1">
+                        <img src="./img/charmander.png" class="card-img-top w-50" alt="charmander-004" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 004</p>
+                            <h3 class="text-black">charmander</h3>
+                            <section class="d-flex">
+                                <div class="w-50 text-center">
+                                    <p class="mx-2 px-2 border bg-danger">fuego</p>
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                  </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card fire2">
+                        <img src="./img/charmeleon.png" class="card-img-top w-50" alt="charmmeleon-005" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 005</p>
+                            <h3 class="text-black">charmmeleon</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 bg-danger">fuego</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card fire3">
+                        <img src="./img/charizard.png" class="card-img-top w-50" alt="charrizard-006" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 006</p>
+                            <h3 class="text-black">charrizard</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 bg-danger">fuego</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 text-black elemFly">volador</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card water1">
+                        <a href="./pages/detalle de pokemons.html"><img src="./img/Squirtle.png" class="card-img-top w-50" alt="Squirtle-007" /></a>
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 007</p>
+                            <h3 class="text-black">Squirtle</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card water2">
+                        <img src="./img/Wartortle.png" class="card-img-top w-50" alt="wartortle-008" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 008</p>
+                            <h3 class="text-black">Wartortle</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card water3">
+                        <img src="./img/blastoise.png" class="card-img-top w-50" alt="blastoise-009" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 009</p>
+                            <h3 class="text-black">blastoise</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemWater">Agua</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card bug1">
+                        <img src="./img/caterpie.png" class="card-img-top w-50" alt="caterpie-010" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 010</p>
+                            <h3 class="text-black">caterpie</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 bg-success">Bicho</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card bug2">
+                        <img src="./img/metapod.png" class="card-img-top w-50" alt="metapod-011" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 011</p>
+                            <h3 class="text-black">metapod</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 bg-success">bicho</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xl-3 pt-3 col-lg-4 col-sm-6">
+                    <div class="card tam-card bug3">
+                        <img src="./img/butterfree.png" class="card-img-top w-50" alt="butterfree-012" />
+                        <div class="card-body">
+                            <p class="card-text text-black-50">N° 012</p>
+                            <h3 class="text-black">butterfree</h3>
+                            <section class="d-flex">
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 bg-success">bicho</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="border mx-2 px-2 elemFly text-black">volador</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section class="d-flex justify-content-center py-3">
+                    <button class="btn bg-primary text-light">
+                        Cargar mas Pokémons
+                    </button>
+                </section>
             </article>
         </section>
     </main>
-    <footer>
-
+    <footer class="py-5 bg-danger text-light text-center text-md-start">
+        <section class="container">
+            <article class="d-flex justify-content-center">
+                <a href="./index.html"><img src="./img/icons8-pokedex-40.png" alt="imagen de pokedex"></a>
+                <h2>Pokedex</h2>
+                <a class="ms-2 fs-3 link-light" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="ms-2 fs-3 link-light" href="#"><i class="bi bi-twitter-x"></i></a>
+                <a class="ms-2 fs-3 link-light" href="#"><i class="bi bi-instagram"></i></a>
+            </article>
+            <article class="row my-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                    <h5 class="text-white">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./pages/nosotros.html"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">¿Quiénes
+                                somos?</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Juegos</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Tabla de
+                                tipos</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                    <h5 class="text-white mt-3 mt-md-0">Descarga nuestra app</h5>
+                    <img src="img/badge-apple-store.svg" alt="" class="w-75 py-1" />
+                    <img src="img/google-play-badge-bb.svg" alt="" class="w-75 py-1" />
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                    <h5 class="text-white">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Email:
+                                contacto@pokedex.com</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Teléfono:
+                                +54 456 7050</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Dirección:
+                                Pueblo Paleta, kanto</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="link-light link-underline-opacity-25 link-underline-opacity-100-hover">Terminos y
+                                condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

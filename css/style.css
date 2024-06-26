@@ -1,1 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.tam-card{
+    width: 100%;
+}
+
+.fire1 {
+    background-color: rgb(224, 178, 148);
+}
+.fire2{
+    background-color: rgb(225, 131, 116);
+}
+.fire3 {
+    background:linear-gradient(to right,rgb(227, 105, 86), rgb(94, 233, 221)) ;
+}
+
+.plant1{
+    background: linear-gradient(to right, rgb(84, 241, 84), rgba(240, 83, 240, 0.801)) ;
+}
+.plant2{
+    background: linear-gradient(to right, rgba(67, 191, 67, 0.992), rgb(189, 61, 189)) ;
+}
+.plant3{
+    background: linear-gradient(to right, rgb(38, 136, 38), rgba(139, 46, 139, 0.801)) ;
+}
+
+.water1{
+background-color: rgb(161, 161, 255);
+}
+.water2{
+background-color: rgb(74, 74, 255);
+}
+.water3{
+background-color: rgb(47, 47, 254);
+}
+
+.bug1{
+background: rgb(141, 225, 97);
+}
+.bug2{
+background: rgb(40, 201, 40);
+}
+.bug3{
+background:linear-gradient(to right, green, rgb(94, 233, 221));
+}
+
+.elemPoisson{
+    background: purple;
+}
+.elemFly {
+    background: rgb(96, 230, 230);
+}
+.elemWater {
+    background-color: rgb(23, 23, 162);
+}
+.elemPlant {
+    background: rgb(120, 175, 36);
+}
+/* sobre nosotros */
+
+.card-profile {
+    width: 30vh; 
+    margin-bottom: 20px; 
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.card1 {
+    background: linear-gradient(145deg, rgb(224, 178, 148), rgb(225, 131, 116));
+}
+.card2 {
+    background: linear-gradient(145deg, #4b4750, #90682f); 
+}
+.card3 {
+    background: linear-gradient(145deg, #f3f5f3, #f706cf); 
+}
+.card4 {
+    background: linear-gradient(145deg, #0c0c0c, #44024d); 
+}
+.carousel-inner img {
+    width: 100%; /* Garantiza que la imagen ocupe todo el espacio disponible */
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.card-body {
+    background-color: #6c757d;
+    
+}
+.card-profile .card-body {
+    padding: 30px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+.cuerponosotros {
+    background-color: #343a40;
+    color: #ffffff;
+}   
+.cardImg{
+    width: 100%; /* Garantiza que la imagen ocupe todo el espacio disponible */
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
+}
