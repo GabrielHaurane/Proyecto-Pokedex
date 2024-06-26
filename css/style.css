@@ -60,3 +60,48 @@ background:linear-gradient(to right, green, rgb(94, 233, 221));
 .elemPlant {
     background: rgb(120, 175, 36);
 }
+/* sobre nosotros */
+
+.card-profile {
+    width: 30vh; 
+    margin-bottom: 20px; 
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.card1 {
+    background: linear-gradient(145deg, rgb(224, 178, 148), rgb(225, 131, 116));
+}
+.card2 {
+    background: linear-gradient(145deg, #4b4750, #90682f); 
+}
+.card3 {
+    background: linear-gradient(145deg, #f3f5f3, #f706cf); 
+}
+.card4 {
+    background: linear-gradient(145deg, #0c0c0c, #44024d); 
+}
+.carousel-inner img {
+    width: 100%; /* Garantiza que la imagen ocupe todo el espacio disponible */
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.card-body {
+    background-color: #6c757d;
+    
+}
+.card-profile .card-body {
+    padding: 30px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+.cuerponosotros {
+    background-color: #343a40;
+    color: #ffffff;
+}   
