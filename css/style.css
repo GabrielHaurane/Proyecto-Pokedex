@@ -105,3 +105,8 @@ background:linear-gradient(to right, green, rgb(94, 233, 221));
     background-color: #343a40;
     color: #ffffff;
 }   
+.cardImg{
+    width: 100%; /* Garantiza que la imagen ocupe todo el espacio disponible */
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Escala la imagen para cubrir el contenedor sin deformarla */
+}
