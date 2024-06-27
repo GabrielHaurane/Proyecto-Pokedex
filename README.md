@@ -14,7 +14,8 @@ Bienvenidos a nuestra pagina de la Pokédex, es un proyecto demostrativo.
 <p>- BOOSTRAP</p>
 <h3>Para ver el codigo</h3> 
 > $ git clone https://github.com/GabrielHaurane/Proyecto-Pokedex.git
-
+<h3>Para ver la DEMO</h3>
+https://proyectopokedex.netlify.app
 
 
 
