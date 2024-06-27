@@ -1,5 +1,4 @@
 
-<img src="[def]"> 
 
  <h1> Pokédex </h1>
 <p>
