@@ -1,4 +1,6 @@
+
 <img src="[def]"> 
+
  <h1> Pokédex </h1>
 <p>
 Bienvenidos a nuestra pagina de la Pokédex, es un proyecto demostrativo.
