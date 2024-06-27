@@ -9,9 +9,9 @@ Bienvenidos a nuestra pagina de la Pokédex, es un proyecto demostrativo.
 - Pagina responsive: se puede adaptar desde celulares hasta computadoras.
 - Interfaz interactiva con sus usuarios
 <h3>Elementos utilizados</h3> 
-- HTML 
-- CSS 
-- BOOSTRAP
+<p>- HTML </p>
+ <p>- CSS</p>
+<p>- BOOSTRAP</p>
 <h3>Para ver el codigo</h3> 
 > $ git clone https://github.com/GabrielHaurane/Proyecto-Pokedex.git
 
