@@ -1,4 +1,6 @@
- ![.](./img/pokeball.png) 
+
+<img src="[def]"> 
+
  <h1> Pokédex </h1>
 <p>
 Bienvenidos a nuestra pagina de la Pokédex, es un proyecto demostrativo.
@@ -15,3 +17,6 @@ Bienvenidos a nuestra pagina de la Pokédex, es un proyecto demostrativo.
 > $ git clone https://github.com/GabrielHaurane/Proyecto-Pokedex.git
 
 
+
+
+[def]: /img/pokeball.png
